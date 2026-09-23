@@ -42,6 +42,11 @@
     section[id]::before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(55% 80% at 92% -6%, rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.16) 0%, transparent 62%), radial-gradient(45% 65% at 2% 108%, rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.10) 0%, transparent 62%); }
     .icon-glow { box-shadow: 0 0 0 4px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.06), 0 4px 12px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.18); }
     .cta-glow { box-shadow: 0 10px 28px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.38); }
+    .partner-marquee { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+    .partner-track { display: flex; align-items: center; width: max-content; gap: 0; animation: partner-scroll 48s linear infinite; }
+    .partner-track:hover { animation-play-state: paused; }
+    .partner-logo { display: flex; align-items: center; justify-content: center; height: 40px; padding: 0 36px; font-family: 'Source Sans 3', system-ui, sans-serif; font-weight: 700; font-size: 19px; letter-spacing: 0.3px; color: #5B6975; white-space: nowrap; flex-shrink: 0; border-right: 1px solid #E7E0D3; }
+    @keyframes partner-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   </style>
 </head>
 <body>
@@ -294,6 +299,44 @@
       </div>
     </div>
   </section>
+
+  <!-- INSTITUIÇÕES PARCEIRAS -->
+  <div class="reveal" style="background: #FFFFFF; padding: 64px 0; box-sizing: border-box; border-top: 1px solid #EDE7DC; border-bottom: 1px solid #EDE7DC;">
+    <div style="text-align: center; margin-bottom: 36px; padding: 0 64px;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #0A969F;">Quem confia na gente</div>
+      <h2 style="margin: 8px 0 0; font-size: 28px; color: #16302D; font-family: Georgia, serif;">Instituições parceiras</h2>
+    </div>
+    <div class="partner-marquee">
+      <div class="partner-track">
+        <div class="partner-logo">Daycoval</div>
+        <div class="partner-logo">Facta</div>
+        <div class="partner-logo">Santander</div>
+        <div class="partner-logo">C6 Bank</div>
+        <div class="partner-logo">BRB</div>
+        <div class="partner-logo">BMG</div>
+        <div class="partner-logo">Finanto</div>
+        <div class="partner-logo">Banrisul</div>
+        <div class="partner-logo">Icred</div>
+        <div class="partner-logo">Crefisa</div>
+        <div class="partner-logo">Total Cash</div>
+        <div class="partner-logo">Presença</div>
+        <div class="partner-logo" style="border-right: none;">Crefaz</div>
+        <div class="partner-logo">Daycoval</div>
+        <div class="partner-logo">Facta</div>
+        <div class="partner-logo">Santander</div>
+        <div class="partner-logo">C6 Bank</div>
+        <div class="partner-logo">BRB</div>
+        <div class="partner-logo">BMG</div>
+        <div class="partner-logo">Finanto</div>
+        <div class="partner-logo">Banrisul</div>
+        <div class="partner-logo">Icred</div>
+        <div class="partner-logo">Crefisa</div>
+        <div class="partner-logo">Total Cash</div>
+        <div class="partner-logo">Presença</div>
+        <div class="partner-logo" style="border-right: none;">Crefaz</div>
+      </div>
+    </div>
+  </div>
 
   <!-- FAQ -->
   <div class="reveal" style="background: #FFFFFF; padding: 96px 64px; box-sizing: border-box;">
