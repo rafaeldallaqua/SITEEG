@@ -35,13 +35,13 @@
     .faq-item[open] summary::after { content: "-"; }
     .prod-row { max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 72px; }
     .prod-photo { flex: 0 1 440px; width: 440px; max-width: 100%; position: relative; }
-    .prod-photo img, .prod-photo .ph-box { width: 100%; aspect-ratio: 4/3; border-radius: 20px; display: block; }
+    .prod-photo img, .prod-photo .ph-box { width: 100%; aspect-ratio: 4/3; border-radius: 20px; display: block; border: 1px solid rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.4); box-sizing: border-box; }
     .prod-text { flex: 1 1 360px; max-width: 460px; display: flex; flex-direction: column; gap: 16px; }
     .prod-row { position: relative; z-index: 1; }
-    .prod-photo::before { content: ''; position: absolute; top: -16px; left: 8%; right: 8%; height: 3px; border-radius: 3px; background: linear-gradient(90deg, transparent, var(--ac, #0A969F) 15%, var(--ac, #0A969F) 85%, transparent); filter: drop-shadow(0 0 5px var(--ac, #0A969F)) drop-shadow(0 0 14px var(--ac, #0A969F)); opacity: .85; pointer-events: none; }
+    .prod-photo::before { content: ''; position: absolute; top: -14px; left: 14%; right: 14%; height: 2px; border-radius: 2px; background: linear-gradient(90deg, transparent, var(--ac, #0A969F) 20%, var(--ac, #0A969F) 80%, transparent); filter: drop-shadow(0 0 3px var(--ac, #0A969F)) drop-shadow(0 0 8px var(--ac, #0A969F)); opacity: .7; pointer-events: none; z-index: 2; }
     section[id] { position: relative; overflow: hidden; }
     section[id]::before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(55% 80% at 92% -6%, rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.16) 0%, transparent 62%), radial-gradient(45% 65% at 2% 108%, rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.10) 0%, transparent 62%); }
-    .icon-glow { box-shadow: 0 0 0 10px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.10), 0 8px 26px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.35); }
+    .icon-glow { box-shadow: 0 0 0 4px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.06), 0 4px 12px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.18); }
     .cta-glow { box-shadow: 0 10px 28px rgba(var(--acr, 10), var(--acg, 150), var(--acb, 159), 0.38); }
   </style>
 </head>
@@ -201,7 +201,7 @@
         </div>
         <div style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #6B264B;">Municipal, estadual e federal</div>
         <h2 style="margin: 0; font-size: 30px; color: #16302D; font-family: Georgia, serif;">Servidor Público</h2>
-        <p style="margin: 0; font-size: 16px; color: #5B6975; line-height: 1.6;">Consignado para servidor público em Botucatu e região — municipal, estadual ou federal —, com as melhores taxas do mercado e desconto direto em folha de pagamento, sem comprometer seu orçamento.</p>
+        <p style="margin: 0; font-size: 16px; color: #5B6975; line-height: 1.6;">Consignado para servidor público — municipal, estadual ou federal —, com as melhores taxas do mercado e desconto direto em folha de pagamento, sem comprometer seu orçamento.</p>
         <ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px;">
           <li style="display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; color: #16302D;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B264B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Municipal, estadual e federal</li>
           <li style="display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; color: #16302D;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B264B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Menores taxas do mercado</li>
